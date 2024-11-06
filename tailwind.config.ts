@@ -12,6 +12,17 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      animation: {
+        'move-up': 'moveUp 10s infinite',
+      },
+      keyframes: {
+        moveUp: {
+          '0%, 100%': { transform: 'translateY(100%)' },
+          '25%': { transform: 'translateY(0)' },
+          '50%': { transform: 'translateY(-100%)' },
+          '75%': { transform: 'translateY(-200%)' },
+        },
+      },
     },
   },
   plugins: [],
