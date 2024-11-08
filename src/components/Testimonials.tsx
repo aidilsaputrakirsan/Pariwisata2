@@ -4,21 +4,21 @@ import Card from "./TestimonialsCard";
 
 function Testimonials() {
   return (
-    <div className="flex flex-row justify-around items-center">
+    <div className="flex flex-col lg:flex-row lg:justify-around items-center">
       <div className="w-[450px]">
-        <div className="flex justify-center items-start flex-col pb-10">
+        <div className="flex justify-center items-center lg:items-start flex-col pb-10">
           <h3 className="text-lg font-semibold" style={{ color: "#5E6282" }}>
             Testimonials
           </h3>
           <h1
-            className="text-5xl font-bold text-wrap"
+            className="text-2xl lg:text-5xl font-bold text-wrap"
             style={{ color: "#14183E" }}
           >
             What people say about Us.
           </h1>
         </div>
       </div>
-      <div>
+      <div className="flex justify-center items-center flex-col">
         <Image
           className="relative right-10"
           width={50}
@@ -26,7 +26,7 @@ function Testimonials() {
           src={"/Image1.png"}
           alt="image"
         />
-        <div className="relative w-[450px] h-80 overflow-hidden">
+        <div className="relative  h-80 overflow-hidden">
           <Card
             comments="“On the Windows talking painted pasture yet its express parties use. Sure last upon he same as knew next. Of believed or diverted no.”"
             author="Mike taylor"

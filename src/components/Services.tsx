@@ -5,16 +5,16 @@ function Services() {
   return (
     <>
       <div className="flex justify-center items-center flex-col">
-        <div className="flex justify-center items-center flex-col pb-10">
+        <div className="flex justify-center items-center flex-col pb-10 ">
           <h3 className="text-lg font-semibold" style={{ color: "#5E6282" }}>
             CATEGORY
           </h3>
-          <h1 className="text-5xl font-bold" style={{ color: "#14183E" }}>
+          <h1 className="text-4xl lg:text-5xl font-bold text-nowrap" style={{ color: "#14183E" }}>
             We Offer Best Services
           </h1>
         </div>
       </div>
-      <div className="flex items-center justify-center flex-row gap-20 flex-wrap">
+      <div className="flex items-center justify-center flex-col md:flex-row gap-10 flex-wrap md:px-8">
         <Card
           category="Calculated Weather"
           description="Built Wicket longer admire do barton vanity itself do in it."

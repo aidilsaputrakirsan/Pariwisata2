@@ -13,14 +13,13 @@ function Destinations() {
           </h1>
         </div>
       </div>
-      <div className="flex items-center justify-center flex-row gap-4 flex-wrap">
+      <div className="flex items-center justify-center flex-row flex-wrap">
         <Card
           country="Italy"
           city="Rome,"
           price="5.42"
           numOfDays={10}
           imageSrc="/Rome.png"
-          decoreSrc=""
         />
         <Card
           country="UK"
@@ -28,7 +27,6 @@ function Destinations() {
           price="4.2"
           numOfDays={12}
           imageSrc="/London.png"
-          decoreSrc=""
         />
 
         <Card
@@ -37,7 +35,6 @@ function Destinations() {
           price="15"
           numOfDays={28}
           imageSrc="/Europe.png"
-          decoreSrc="/Decore.svg"
         />
       </div>
     </>

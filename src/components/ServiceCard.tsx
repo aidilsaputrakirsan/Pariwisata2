@@ -10,8 +10,8 @@ interface Props {
 
 function Card(props: Props) {
   return (
-    <div className="group">
-      <div className="relative h-72 w-60 p-6 rounded-3xl hover:shadow-2xl cursor-pointer flex justify-center items-center flex-col gap-4 bg-white">
+    <div className="group -mb-16">
+      <div className="relative h-54 md:h-72 w-60 p-6 rounded-3xl hover:shadow-2xl cursor-pointer flex justify-center items-center flex-col gap-4 bg-white">
         <Image
           style={{
             objectFit: "cover",
@@ -39,7 +39,7 @@ function Card(props: Props) {
         height={100}
         src={"/Rectangle 157.png"}
         alt="rect"
-        className="relative -top-16 -left-8 -z-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out"
+        className="relative -top-[70px] -left-8 -z-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out"
       />
     </div>
   );

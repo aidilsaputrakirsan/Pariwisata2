@@ -7,13 +7,12 @@ interface Props {
   price: string;
   numOfDays: number;
   imageSrc: string;
-  decoreSrc: string;
 }
 
 function Card(props: Props) {
   return (
-    <div className="flex flex-row">
-      <div className="relative rounded-3xl cursor-pointer flex justify-center items-center flex-col pl-24">
+    <div className="flex flex-row px-8">
+      <div className="relative rounded-3xl cursor-pointer flex justify-center items-center flex-col">
         <Image
           className="rounded-s-none h-[457px] w-[315px]"
           width={1000}
@@ -48,17 +47,7 @@ function Card(props: Props) {
           </div>
         </div>
       </div>
-      {props.decoreSrc ? (
-        <Image
-          className="relative right-8 -z-50 inline"
-          src={props.decoreSrc}
-          width={100}
-          height={100}
-          alt="decore"
-        />
-      ) : (
-        ""
-      )}
+     
     </div>
   );
 }

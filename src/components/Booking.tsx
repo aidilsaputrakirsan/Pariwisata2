@@ -4,14 +4,14 @@ import React from "react";
 function Booking() {
   return (
     <>
-      <div className="flex flex-row justify-around items-center">
+      <div className="flex flex-col lg:flex-row justify-around items-center px-10 gap-10 overflow-hidden pb-10">
         <div className="w-[450px]">
-          <div className="flex justify-center items-start flex-col pb-10">
+          <div className="flex justify-center items-center lg:items-start flex-col pb-10">
             <h3 className="text-lg font-semibold" style={{ color: "#5E6282" }}>
               Easy and Fast
             </h3>
             <h1
-              className="text-5xl font-bold text-wrap"
+              className="text-2xl lg:text-5xl font-bold lg:text-wrap text-nowrap"
               style={{ color: "#14183E" }}
             >
               Book Your Next Trip In 3 Easy Steps
@@ -27,7 +27,7 @@ function Booking() {
                   alt="destination"
                 />
               </div>
-              <div className="w-72">
+              <div className="lg:w-72">
                 <h2
                   className="text-base font-bold"
                   style={{ color: "#5E6282" }}
@@ -52,7 +52,7 @@ function Booking() {
                   alt="destination"
                 />
               </div>
-              <div className="w-72">
+              <div className="lg:w-72">
                 <h2
                   className="text-base font-bold"
                   style={{ color: "#5E6282" }}
@@ -77,7 +77,7 @@ function Booking() {
                   alt="destination"
                 />
               </div>
-              <div className="w-72">
+              <div className="lg:w-72">
                 <h2
                   className="text-base font-bold"
                   style={{ color: "#5E6282" }}
@@ -167,7 +167,7 @@ function Booking() {
               </label>
             </div>
           </div>
-          <div className="relative left-52 bottom-44 h-32 w-72 shadow-2xl rounded-2xl bg-white">
+          <div className="relative left-28 lg:left-52 bottom-44 h-32 w-72 shadow-2xl rounded-2xl bg-white">
             <div className="p-4 flex justify-center items-start gap-4">
               <Image className="pt-2" width={50} height={50} src={"/Mask.png"} alt="mask" />
               <div className="pt-2">
